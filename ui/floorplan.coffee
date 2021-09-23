@@ -54,7 +54,7 @@ $(document).on 'templateinit', (event) ->
             catch err
               _format = {}
             @floorplanDevices[_id]["format"] = _format
-            @floorplanDevices[_id]["colorOff"] = "fill:#cccccc" # _device.format?.colorOn ? _onColor
+            @floorplanDevices[_id]["colorOff"] = "fill:#cccccc;opacity:0.3" # _device.format?.colorOn ? _onColor
             @floorplanDevices[_id]["colorOn"] = _onColor # _device.format?.colorOn ? _onColor
 
             switch _device.type
